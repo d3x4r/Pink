@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+    <!-- <link rel="preload" href="/fonts/opensans.woff2" as="font"> -->
+    <!-- <script src="js/picturefill.min.js"></script> -->
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <main-nav class="site-navigation">
+        <a href="index.html" aria-label="Логотип сайта">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
+          </picture>
+        </a>
+        <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+              <a class="site-navigation__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-navigation__item">
+              <a class="site-navigation__link">Конкурс</a>
+          </li>
+          <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </main-nav>
+      <h1 class="text__big text__big-title--header">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
+    </header>
+    <main>
+      <section class="page__slogan">
+        <p class="text__regular">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:
+        </p>
+      </section>
+      <section class="form">
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <ul class="form__user-list">
+              <li class="form__user-item">
+                <label class="form__user-label" for="second-name">Фамилия:</label>
+                <input class="form__user-input" type="text" id="second-name" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form__user-item">
+                <label class="form__user-label" for="first-name">Имя:</label>
+                <input class="form__user-input" type="text" id="first-name" placeholder="Введите ваше имя*">
+              </li>
+              <li class="form__user-item">
+                <label class="form__user-label" for="third-name">Отчество:</label>
+                <input class="form__user-input" type="text" id="third-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__progress-list">
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="selfie" checked>
+                <label class="form__progress-checkbox" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="tan" checked>
+                <label class="form__progress-checkbox" for="tan">Обгорел на пляже</label>
+              </li>
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="chuck">
+                <label class="form__progress-checkbox" for="chuck">Видел Чака Норриса</label>
+              </li>
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="souvenir">
+                <label class="form__progress-checkbox" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="tower" checked>
+                <label class="form__progress-checkbox" for="tower">Удержал башню</label>
+              </li>
+              <li class="form__progress-item">
+                <input class="form_progress-input visually-hidden" type="checkbox" id="hotel">
+                <label class="form__progress-checkbox" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Номер телефона</legend>
+            <ul class="form__contact-list">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="tel">Номер телефона</label>
+                <input class="form__cotact-input" type="tel" id="tel" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="email">Адрес почты</label>
+                <input class="form__cotact-input" type="email" id="email" placeholder="Введите почту*">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>С каким приложением путешествовали?</legend>
+            <ul class="form__os-list">
+              <li class="form__os-item">
+                <input class="form__os-input visually-hidden" type="radio" id="ios" name="os" checked>
+                <label class="form__os-label" for="ios">Pink для iOS</label>
+              </li>
+              <li class="form__os-item">
+                <input class="form__os-input visually-hidden" type="radio" id="android" name="os">
+                <label class="form__os-label" for="android">Pink на Android</label>
+              </li>
+              <li class="form__os-item">
+                <input class="form__os-input visually-hidden" type="radio" id="windows" name="os">
+                <label class="form__os-label" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Опишите свои эмоции</legend>
+            <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__foot-note">* — обязательные поля</p>
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer footer">
+      <div class="footer__logo">
+        <a href="index.html" aria-label="Логотип сайта">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта">
+          </picture>
+        </a>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="18" height="14">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="9" height="18">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="15" height="13">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__developers">
+        <p>Разработано
+          <a href="#">
+            <svg width="27" height="34">
+              <use xlink:href="#icon-logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <section class="modal modal--succes">
+      <h2 class="modal__title">Ваша заявка отправлена</h2>
+      <p class="modal__text">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal-__button-wrapper">
+        <button class="modal__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="modal modal--failure">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="modal-succes__button-wrapper">
+          <button class="modal__button" type="button">Ок</button>
+        </div>
+      </section>
+  </body>
+</html>
