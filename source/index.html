@@ -10,11 +10,11 @@
   <link href="js/pixel-glass/styles.css" rel="stylesheet">
   <script src="js/pixel-glass/script.js"></script>
   <!------------- pixel-glass-end ------------>
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.min.css" rel="stylesheet">
   <!-- <link rel="preload" href="/fonts/opensans.woff2" as="font"> -->
   <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=%3Caab9b633-e84f-42a9-9e7d-9d8bf07c5beb%3E" type="text/javascript"></script>
     <script src="js/map.js"></script>
-    <script src="js/picturefill.min.js"></script> -->
+    script src="js/picturefill.min.js"></script> -->
 </head>
 
 <body>
@@ -23,14 +23,16 @@
   </div>
   <header class="header">
     <main-nav class="site-navigation">
-      <a aria-label="Логотип сайта">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
-        </picture>
-      </a>
-      <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+      <div class="site-navigation__wrapper">
+        <a class="site-navigation__logo" aria-label="Логотип сайта">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
+          </picture>
+        </a>
+        <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+      </div>
       <ul class="site-navigation__list">
         <li class="site-navigation__item">
           <a class="site-navigation__link">Главная</a>
@@ -46,43 +48,45 @@
         </li>
       </ul>
     </main-nav>
-    <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
-    <h2 class="text-big text-big--header">Взгляните на жизнь иначе!</h2>
-    <picture>
-      <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+    <div class="header__container">
+      <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
+      <h2 class="text-big text-big--header">Взгляните на жизнь иначе!</h2>
+      <picture>
+        <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
 
-      <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-      <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-      <img class="header__app-preview" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
-        alt="Изображение приложения в телефоне">
-    </picture>
-    <a class="button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-    <ul class="header__store-list">
-      <li class="header__store-item">
-        <a href="https://www.apple.com/ru/itunes/" aria-label="Скачать в Itunes">
-          <svg width="47" height="56">
-            <use xlink:href="#icon-logo-apple"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header__store-item">
-        <a href="https://play.google.com/store" aria-label="Скачать в Playmarket">
-          <svg width="43" height="47">
-            <use xlink:href="#icon-logo-android"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="header__store-item">
-        <a href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Скачать в Microsoft store">
-          <svg width="44" height="41">
-            <use xlink:href="#icon-logo-microsoft"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <p class="header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+        <img class="header__app-preview" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
+          alt="Изображение приложения в телефоне">
+      </picture>
+      <a class="button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+      <ul class="header__store-list">
+        <li class="header__store-item">
+          <a href="https://www.apple.com/ru/itunes/" aria-label="Скачать в Itunes">
+            <svg width="47" height="56">
+              <use xlink:href="#icon-logo-apple"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__store-item">
+          <a href="https://play.google.com/store" aria-label="Скачать в Playmarket">
+            <svg width="43" height="47">
+              <use xlink:href="#icon-logo-android"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__store-item">
+          <a href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Скачать в Microsoft store">
+            <svg width="44" height="41">
+              <use xlink:href="#icon-logo-microsoft"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+    </div>
   </header>
 
   <main>
