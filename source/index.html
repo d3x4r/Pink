@@ -22,35 +22,37 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
-    <main-nav class="site-navigation">
+    <nav class="site-navigation">
       <div class="site-navigation__wrapper">
-        <a class="site-navigation__logo" aria-label="Логотип сайта">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
-          </picture>
-        </a>
-        <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+        <div class="site-navigation__logo-wrapper">
+          <a class="site-navigation__logo" aria-label="Логотип сайта">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
+            </picture>
+          </a>
+          <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+        </div>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
       </div>
-      <ul class="site-navigation__list">
-        <li class="site-navigation__item">
-          <a class="site-navigation__link">Главная</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__link" href="#">Html Academy</a>
-        </li>
-      </ul>
-    </main-nav>
-    <div class="header__container">
+    </nav>
+    <div class="header__wrapper-content">
       <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
-      <h2 class="text-big text-big--header">Взгляните на жизнь иначе!</h2>
+      <h2 class="text-big text-big--header header__title">Взгляните на жизнь иначе!</h2>
       <picture>
         <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
@@ -61,7 +63,7 @@
         <img class="header__app-preview" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
           alt="Изображение приложения в телефоне">
       </picture>
-      <a class="button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+      <a class="button header__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
       <ul class="header__store-list">
         <li class="header__store-item">
           <a href="https://www.apple.com/ru/itunes/" aria-label="Скачать в Itunes">
@@ -85,7 +87,7 @@
           </a>
         </li>
       </ul>
-      <p class="header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      <p class="header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </header>
 

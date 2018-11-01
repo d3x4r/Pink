@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  width: 276px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 21px;
+  }
+}
