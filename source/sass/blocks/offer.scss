@@ -17,8 +17,9 @@
   background-position: center -30px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 94px;
-
+  padding-top: 29.5%;
+  padding-bottom: 278px;
+  overflow: hidden;
 }
 
 .offer__list,
@@ -29,9 +30,9 @@
 }
 
 .offer__list {
-  width: 255px;
+  width: 80%;
   margin-right: auto;
-  margin-left:auto;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -52,11 +53,143 @@
   margin-bottom: 31px;
 }
 
+.offer__app-preview-list {
+  position: relative;
+  width: 157px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .offer__app-preview-item {
   display: none;
 }
 
 .offer__app-preview-item--active {
   display: block;
+  position: absolute;
 }
 
+@media (min-width: $tablet-width) {
+  .offer__main-title {
+    width: 587px;
+    margin-top: 48px;
+    margin-bottom: 0;
+  }
+
+  .offer__title-row {
+    width: 335px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .offer__app-preview {
+    max-width: none;
+  }
+
+  .offer__wrapper-content {
+    padding-top: 122px;
+    background-image: url("../img/bg-description-tablet.png");
+    background-position: center 16px;
+    padding-bottom: 3px;
+  }
+
+  .offer__list {
+    width: 46.5%;
+    margin-right: 22px;
+    text-align: left;
+  }
+
+  .offer__text {
+    margin-bottom: 34px;
+  }
+
+  .offer__app-preview-list {
+    position: static;
+  }
+
+  .offer {
+    position: relative;
+  }
+
+  .offer__app-preview-item--active {
+    left: 21px;
+    top: 196px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__main-title {
+    width: 745px;
+    margin-top: 68px;
+  }
+
+  .offer__title-row {
+    width: 440px;
+  }
+
+  .offer__app-preview-item {
+    display: block;
+  }
+
+  .offer__app-preview-item--active {
+    position: static;
+  }
+
+  .offer__wrapper-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 34px;
+    background-position: center 50px;
+  }
+
+  .offer__app-preview-list {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .offer__app-preview {
+    margin-right: 27px;
+  }
+
+  .offer__app-preview:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .offer__list {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 875px;
+    margin-top: 53px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .offer__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .offer__text {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .offer__item {
+    width: 230px;
+    margin-right: 92px;
+  }
+
+  .offer__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
