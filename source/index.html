@@ -191,7 +191,7 @@
               <span class="price__table-title">База</span>
               <span class="price__table-value">1,99 usd</span>
             </th>
-            <th class="price__table-pole price__table-pole--middle">
+            <th class="price__table-pole price__table-pole--middle price__table-pole--hit">
               <span class="price__table-title">Стандарт</span>
               <span class="price__table-value">3,99 usd</span>
             </th>
@@ -201,72 +201,96 @@
             </th>
           </tr>
           <tr>
-            <td class="text-regular">Розовый фильтр</td>
-            <td>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
+            <td class="price__table-data price__table-data--first-row text-regular">Розовый фильтр</td>
+            <td class="price__table-data price__table-data--first-row">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Розовый фильтр</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
             </td>
-            <td>
-              <span class="text-regular">Розовый фильтр</span>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
+            <td class="price__table-data price__table-data--first-row">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Розовый фильтр</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
             </td>
-            <td>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-regular">Смайлики</td>
-            <td>
-              <svg width="27" height="26">
-                <use xlink:href="#icon-no"></use>
-              </svg>
-            </td>
-            <td>
-              <span>Смайлики</span>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
-            </td>
-            <td>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
+            <td class="price__table-data price__table-data--first-row">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Розовый фильтр</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
             </td>
           </tr>
           <tr>
-            <td class="text-regular">Комментарии</td>
-            <td>
-              <svg width="27" height="26">
-                <use xlink:href="#icon-no"></use>
-              </svg>
+            <td class="price__table-data text-regular">Смайлики</td>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Смайлики</span>
+                <svg class="price__table-svg" width="27" height="26" fill="#f25b26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </div>
             </td>
-            <td>
-              <span class="text-regular">Комментарии</span>
-              <svg width="27" height="26">
-                <use xlink:href="#icon-no"></use>
-              </svg>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Смайлики</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
             </td>
-            <td>
-              <svg width="31" height="21">
-                <use xlink:href="#icon-yes"></use>
-              </svg>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Смайлики</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="price__table-data text-regular">Комментарии</td>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Комментарии</span>
+                <svg class="price__table-svg" width="27" height="26" fill="#f25b26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </div>
+            </td>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Комментарии</span>
+                <svg class="price__table-svg" width="27" height="26" fill="#f25b26">
+                  <use xlink:href="#icon-no"></use>
+                </svg>
+              </div>
+            </td>
+            <td class="price__table-data">
+              <div class="price__table-container">
+                <span class="price__table-mobile text-regular">Комментарии</span>
+                <svg class="price__table-svg price__table-svg--yes" width="31" height="21" fill="#3dc644">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
             </td>
           </tr>
         </table>
       </div>
       <div class="price__slider-toggles">
-        <input class="visually-hidden" type="radio" id="first-tariff" name="toggle-price-slide">
-        <input class="visually-hidden" type="radio" id="second-tariff" name="toggle-price-slide" checked>
-        <input class="visually-hidden" type="radio" id="third-tariff" name="toggle-price-slide">
+        <input class="price__slider-input visually-hidden" type="radio" id="first-tariff" name="toggle-price-slide">
         <label class="price__slider-toggle price__slider-toggle-1" for="first-tariff" aria-label="Тариф База"
           tabindex="0"></label>
+        <input class="price__slider-input visually-hidden" type="radio" id="second-tariff" name="toggle-price-slide" checked>
         <label class="price__slider-toggle price__slider-toggle-2" for="second-tariff" aria-label="Тариф стандарт"
           tabindex="0"></label>
+        <input class="price__slider-input visually-hidden" type="radio" id="third-tariff" name="toggle-price-slide">
         <label class="price__slider-toggle price__slider-toggle-3" for="third-tariff" aria-label="Тариф Анлим"
           tabindex="0"></label>
       </div>

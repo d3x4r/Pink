@@ -1,5 +1,6 @@
 .price {
   padding-top: 95px;
+  padding-bottom: 43px;
   background-image: url("../img/table-slider.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +9,8 @@
 
 .price__table-wrapper {
   position: relative;
-  width: 320px;
-  min-height: 400px;
+  width: 100%;
+  min-height: 281px;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
@@ -18,13 +19,34 @@
 .price__table {
   position: absolute;
   top: 0;
-  left: -530px;
-  width: 1104px;
+  left: calc(50% - 693px);
+  width: 1109px;
   border-collapse: collapse;
 }
 
 .price__table-pole {
+  padding-top: 17px;
+  padding-bottom: 21px;
   background-color: #283645;
+  text-transform: uppercase;
+}
+
+.price__table-pole--hit {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -3px;
+}
+
+.price__table-pole--hit::before {
+  position: absolute;
+  content: "Хит";
+  top: 18px;
+  left: 6px;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
 }
 
 .price__table-title {
@@ -47,8 +69,11 @@
   border-bottom: 2px solid #e5e5e5;
 }
 
-td {
-  width: 276px;
+.price__table-data {
+  width: 248px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 22px;
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
@@ -59,9 +84,161 @@ td {
   border-left: 2px solid #e5e5e5;
 }
 
-// tr {
-//   border-bottom: 2px solid #e5e5e5;
-// }
-// .price__table-pole {
-//   border-bottom: 2px solid #e5e5e5;
-// }
+.price__table-mobile {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__table-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__table-svg {
+  margin-right: 17px;
+}
+
+.price__table-svg--yes {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.price__slider-toggles {
+  position: relative;
+  width: 56px;
+  height: 12px;
+  margin-top: 44px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.price__slider-toggle::before {
+  position: absolute;
+  content: "";
+  border: 3px solid #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price__slider-toggle-1::before {
+  top: 0;
+  left: 0;
+}
+
+.price__slider-toggle-2::before {
+  top: 0;
+  left: 50%;
+}
+
+.price__slider-toggle-3::before {
+  top: 0;
+  right: 0;
+}
+
+.price__slider-input:checked + .price__slider-toggle::before {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .price__table-mobile,
+  .price__slider-toggles {
+    display: none;
+  }
+
+  .price {
+    padding-top: 97px;
+    padding-bottom: 7px;
+    background-position: center -62px;
+  }
+
+  .price__table-wrapper {
+    position: relative;
+    width: 94%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .price__table {
+    position: static;
+    width: 100%;
+  }
+
+  .price__table-pole {
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+
+  .price__table-data {
+    padding-top: 7px;
+    padding-bottom: 11px;
+    width: 100px;
+    padding-left: 17px;
+  }
+
+  .price__table-title {
+    font-size: 16px;
+  }
+
+  .price__table-value {
+    font-size: 18px;
+  }
+
+  .price__table-container {
+    justify-content: center;
+  }
+
+  .price__table-pole--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-position: 0 0;
+  }
+
+  .price__table-pole--hit::before {
+    top: 10px;
+    left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-top: 178px;
+    padding-bottom: 95px;
+    background-image: url("../img/table-desktop.png");
+    background-position: center 19px;
+  }
+
+  .price__table-wrapper {
+    width: 940px;
+  }
+
+  .price__table-title {
+    font-size: 18px;
+  }
+
+  .price__table-value {
+    font-size: 24px;
+  }
+
+  .price__table-pole {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .price__table-data {
+    width: 116px;
+    padding-top: 15px;
+    padding-left: 21px;
+    padding-bottom: 17px;
+    font-size: 18px;
+  }
+
+  .price__table-pole--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-position: 0 0;
+  }
+
+  .price__table-pole--hit::before {
+    top: 19px;
+    left: 8px;
+  }
+}
