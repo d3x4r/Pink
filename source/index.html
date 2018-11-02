@@ -143,34 +143,43 @@
       </div>
     </section>
     <section class="fact">
-      <h2 class="fact__title">Эффект на 24 часа!</h2>
-      <p class="text-regular">Британские ученые провели исследования и доказали, что положительный эффект от
-        использования приложения длиться целые сутки!</p>
-      <a class="fact__link text-regular" href="#">
-        Узнать больше об исследовании
-      </a>
+      <div class="fact__wrapper">
+        <h2 class="fact__title">Эффект на&nbsp;24 часа!</h2>
+        <p class="fact__text text-regular">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длиться целые сутки!</p>
+        <a class="fact__link text-regular" href="#">
+          Узнать больше об исследовании
+        </a>
+      </div>
     </section>
     <section class="comment">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="comment__slider-first">
-        <h3 class="text-regular text-regular--big">Николай Петров <span class="text-regular">25 лет, водитель трамвая</span></h3>
-        <p class="text-regular">«Это приложение перевернуло мой мир и позвонило по-новому взглянуть на привычные серый
+        <h3 class="comment__author">Николай Петров <span class="comment__author-description text-regular">25 лет, водитель трамвая</span></h3>
+        <p class="comment__text text-regular">«Это приложение перевернуло мой мир и позвонило по-новому взглянуть на привычные серый
           вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="comment__slider-buttons">
+          <button class="comment__slider-button comment__slider-button--previous" type="button" aria-label="Переключить на предыдущий слайд">
+            <svg width="22" height="41">
+              <use xlink:href="#icon-review-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="comment__slider-button comment__slider-button--next" type="button" aria-label="Переключить на следующий слайд">
+            <svg width="22" height="41">
+              <use xlink:href="#icon-review-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="comment__slider-toggles">
-        <input class="visually-hidden" type="radio" id="first-comment" name="toggle-comment-slide" checked>
-        <input class="visually-hidden" type="radio" id="second-comment" name="toggle-comment-slide">
-        <input class="visually-hidden" type="radio" id="third-comment" name="toggle-comment-slide">
+        <input class="comment__slider-input visually-hidden" type="radio" id="first-comment" name="toggle-comment-slide" checked>
         <label class="comment__slider-toggle comment__slider-toggle-1" for="first-comment" aria-label="Первый отзыв"
-          tabindex="0"></label>
+        tabindex="0"></label>
+        <input class="comment__slider-input visually-hidden" type="radio" id="second-comment" name="toggle-comment-slide">
         <label class="comment__slider-toggle comment__slider-toggle-2" for="second-comment" aria-label="Второй отзыв"
-          tabindex="0"></label>
+        tabindex="0"></label>
+        <input class="comment__slider-input visually-hidden" type="radio" id="third-comment" name="toggle-comment-slide">
         <label class="comment__slider-toggle comment__slider-toggle-3" for="third-comment" aria-label="Третий отзыв"
           tabindex="0"></label>
-      </div>
-      <div class="comment__slider-buttons">
-        <button class="comment__slider-button comment__slider-button--previous" type="button" aria-label="Переключить на предыдущий слайд"></button>
-        <button class="comment__slider-button comment__slider-button--next" type="button" aria-label="Переключить на следующий слайд"></button>
       </div>
     </section>
     <section class="price">

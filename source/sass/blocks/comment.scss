@@ -1,0 +1,149 @@
+.comment {
+  width: 86%;
+  margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.comment__slider-buttons,
+.comment__author-description {
+  display: none;
+}
+
+.comment__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.comment__text {
+  margin-top: 12px;
+  line-height: 30px;
+}
+
+.comment__slider-toggles {
+  position: relative;
+  width: 60px;
+  height: 12px;
+  margin-top: 37px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comment__slider-toggle::before {
+  position: absolute;
+  content: "";
+  border: 3px solid #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.comment__slider-toggle-1::before {
+  top: 0;
+  left: 0;
+}
+
+.comment__slider-toggle-2::before {
+  top: 0;
+  right: 0;
+}
+
+.comment__slider-toggle-3::before {
+  top: 0;
+  left: 50%;
+}
+
+.comment__slider-input:checked + .comment__slider-toggle::before {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 92%;
+  }
+
+  .comment__slider-first {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment__author {
+    order: 2;
+    margin-top: 16px;
+    font-size: 20px;
+  }
+
+  .comment__author-description {
+    display: block;
+    margin-top: 2px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .comment__text {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    width: 720px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 15px;
+  }
+
+  .comment__slider-first {
+    position: relative;
+  }
+
+  .comment__slider-toggles {
+    display: none;
+  }
+
+  .comment__text {
+    margin-top: 130px;
+  }
+
+  .comment__author {
+    margin-top: 19px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .comment__author-description {
+    font-size: 18px;
+  }
+
+  .comment__slider-buttons {
+    display: block;
+  }
+
+  .comment__slider-button {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .comment__slider-button--previous,
+  .comment__slider-button--next {
+    top: 50%;
+  }
+
+  .comment__slider-button--previous {
+    left: -110px;
+  }
+
+  .comment__slider-button--next {
+    right: -110px;
+  }
+}
