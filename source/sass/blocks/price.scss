@@ -1,0 +1,67 @@
+.price {
+  padding-top: 95px;
+  background-image: url("../img/table-slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -30px;
+}
+
+.price__table-wrapper {
+  position: relative;
+  width: 320px;
+  min-height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.price__table {
+  position: absolute;
+  top: 0;
+  left: -530px;
+  width: 1104px;
+  border-collapse: collapse;
+}
+
+.price__table-pole {
+  background-color: #283645;
+}
+
+.price__table-title {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.price__table-value {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.price__table-angle {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+td {
+  width: 276px;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.price__table-pole--middle {
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+// tr {
+//   border-bottom: 2px solid #e5e5e5;
+// }
+// .price__table-pole {
+//   border-bottom: 2px solid #e5e5e5;
+// }
