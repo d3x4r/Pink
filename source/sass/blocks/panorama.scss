@@ -1,0 +1,28 @@
+.panorama__image-container {
+  position: relative;
+}
+
+.panorama__title {
+  position: absolute;
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 20px;
+  margin-top: 0;
+  padding-left: 19px;
+  padding-top: 5px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #d22856;
+}
+
+.panorama__image {
+  display: block;
+  width: 100%;
+}

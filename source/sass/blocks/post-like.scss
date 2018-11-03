@@ -1,0 +1,23 @@
+.post-like {
+  display: flex;
+  margin-top: 15px;
+}
+
+.post-like__button {
+  display: block;
+  width: 13px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.post-like__text {
+  width: 150px;
+  margin: 0;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}

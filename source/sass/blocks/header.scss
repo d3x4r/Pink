@@ -58,6 +58,16 @@
   text-align: center;
 }
 
+.header__caption {
+  width: 170px;
+  margin-top: 31px;
+  margin-right: auto;
+  margin-left:auto;
+  padding-bottom: 83px;
+  text-align: center;
+  color: #ffffff;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -119,6 +129,15 @@
     font-size: 18px;
     z-index: 2;
   }
+
+  .header__caption {
+    width: 360px;
+    margin-top: 70px;
+    padding-bottom: 139px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -162,5 +181,10 @@
   .header__app-preview {
     max-width: none;
     right: -116px;
+  }
+
+  .header__caption {
+    margin-top: 63px;
+    padding-bottom: 101px;
   }
 }

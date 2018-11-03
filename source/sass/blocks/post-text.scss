@@ -1,0 +1,27 @@
+.post-text {
+  box-sizing: border-box;
+  width: 87.2%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 18px;
+  padding-left: 17px;
+  padding-bottom: 26px;
+
+  background-color: #f2f2f2;
+}
+
+.post-text__author {
+  margin: 0;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.post-text__date {
+  font-weight: normal;
+}
+
+.post-text__message {
+  margin: 0;
+  margin-bottom: 1px;
+  line-height: 24px;
+}

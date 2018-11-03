@@ -9,7 +9,8 @@
     <link href="js/pixel-glass/photo.css" rel="stylesheet">
     <link href="js/pixel-glass/styles.css" rel="stylesheet">
     <script src="js/pixel-glass/script.js"></script>
-  <!------------- pixel-glass-end ------------>
+    <!------------- pixel-glass-end ------------>
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- <link href="css/style.min.css" rel="stylesheet"> -->
     <!-- <link rel="preload" href="/fonts/opensans.woff2" as="font"> -->
     <!-- <script src="js/picturefill.min.js"></script> -->
@@ -19,37 +20,41 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <main-nav class="site-navigation">
-        <a href="index.html" aria-label="Логотип сайта">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
-          </picture>
-        </a>
-        <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-navigation__item">
+      <nav class="site-navigation">
+        <div class="site-navigation__wrapper">
+          <div class="site-navigation__logo-wrapper">
+            <a class="site-navigation__logo" href="index.html" aria-label="Логотип сайта">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
+              </picture>
+            </a>
+            <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
+          </div>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-navigation__item">
               <a class="site-navigation__link">Фотографии</a>
-          </li>
-          <li class="site-navigation__item">
+            </li>
+            <li class="site-navigation__item">
               <a class="site-navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Html Academy</a>
-          </li>
-        </ul>
-      </main-nav>
-      <h1 class="text-big text-big--header">
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="header__caption text-big text-big--header">
         Фотографии пользователей
       </h1>
     </header>
     <main>
       <section class="page-slogan">
-        <p class="text-regular">Взгляните на фотографии, которые выкладывают пользователи!
+        <p class="page-slogan__text text-regular">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
       </section>
@@ -67,14 +72,14 @@
                   alt="Панорама дня">
             </picture>
           </a>
-          <p>Панорама дня</p>
+          <p class="panorama__title">Панорама дня</p>
         </div>
         <div class="post-text">
-          <p class="post-text__author">Анна <span class="post-text__date">5 минут назад</span></p>
+          <p class="post-text__author">Анна <span class="post-text__date">(5 минут назад)</span></p>
           <p class="post-text__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="post-like">
-            <button style="width:50px; height: 50px;" class="post-like__button" type="button"><img src="img/heart.svg" width="13" height="12"></button>
-            <p class="post-like__text">Нравится:<span class="post-like__number">215</span></p>
+            <button class="post-like__button" type="button"><img src="img/heart.svg" width="13" height="12"></button>
+            <p class="post-like__text">Нравится: <span class="post-like__number">215</span></p>
           </div>
         </div>
       </section>
