@@ -7,3 +7,23 @@
   line-height: 30px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-slogan__text {
+    width: 73%;
+    margin-top: 92px;
+    margin-bottom: 76px;
+
+    font-size: 18px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-slogan__text {
+    width: 555px;
+    margin-bottom: 88px;
+
+    font-weight: normal;
+  }
+}

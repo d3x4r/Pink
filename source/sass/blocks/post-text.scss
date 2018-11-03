@@ -17,11 +17,84 @@
 }
 
 .post-text__date {
+  font-size: 12px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .post-text__message {
   margin: 0;
   margin-bottom: 1px;
   line-height: 24px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .post-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 94%;
+    padding-top: 15px;
+    padding-left: 28px;
+    padding-bottom: 24px;
+  }
+
+  .post-text__author {
+    order: 1;
+    width: 50%;
+    margin-top: 9px;
+  }
+
+  .post-like {
+    order: 2;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .post-text--usual {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 157px;
+    margin: 0;
+  }
+
+  .post-text__author--usual {
+    width: 200px;
+  }
+
+  .post-text__message {
+    order: 3;
+    width: 505px;
+  }
+
+  .post-text__message--usual {
+    order: 3;
+    width: 250px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-text {
+    width: 938px;
+    padding-top: 13px;
+    padding-bottom: 22px;
+  }
+
+  .post-text__message {
+    width: 855px;
+  }
+
+  .post-text__message--usual {
+    width: 250px;
+  }
+
+  .post-text--usual {
+    width: 300px;
+  }
 }

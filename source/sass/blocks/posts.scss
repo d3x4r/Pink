@@ -1,0 +1,20 @@
+.posts {
+  margin-top: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .posts {
+    width: 94%;
+    margin-top: 49px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .posts {
+    width: 940px;
+  }
+}
