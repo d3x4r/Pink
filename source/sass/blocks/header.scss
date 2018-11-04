@@ -68,6 +68,11 @@
   color: #ffffff;
 }
 
+.header__caption--form {
+  width: 230px;
+  padding-bottom: 55px;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -138,6 +143,11 @@
     font-size: 50px;
     line-height: 60px;
   }
+
+  .header__caption--form {
+    width: 485px;
+    padding-bottom: 79px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -186,5 +196,9 @@
   .header__caption {
     margin-top: 63px;
     padding-bottom: 101px;
+  }
+
+  .header__caption--form {
+    width: 760px;
   }
 }

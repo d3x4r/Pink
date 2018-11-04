@@ -1,0 +1,45 @@
+.modal__button-wrapper {
+  display: flex;
+}
+
+.modal__button-wrapper--failure {
+  background-color: #f2f2f2;
+}
+
+.modal__content {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal__button {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+}
+
+.modal {
+  display: none;
+}

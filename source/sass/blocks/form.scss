@@ -1,0 +1,278 @@
+.form__fieldset-name {
+  border: none;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__user-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__title--legend {
+  line-height: 18px;
+}
+
+.form__contact-legend {
+  display: none;
+}
+
+.form__label-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: normal;
+}
+
+.form__user-input,
+.form__cotact-input {
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  height: 62px;
+  border: 1px solid #e5e5e5;
+}
+
+.form__user-input::placeholder,
+.form__cotact-input::placeholder,
+.form__textarea::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: normal;
+}
+
+.form__user-label {
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
+
+.form__progress-list {
+  margin: 0;
+  margin-top: 43px;
+  padding: 0;
+  list-style: none;
+}
+
+.form__progress-fieldset-container {
+  margin-top: 15px;
+  padding-top: 38px;
+  background-color: #f2f2f2;
+}
+
+.form__progress-fieldset {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+}
+
+.form__progress-legend {
+  width: 218px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.form__progress-checkbox {
+  width: 200px;
+  margin-left: 70px;
+}
+
+.form__progress-item {
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.form__progress-item:last-child {
+  margin-bottom: 47px;
+}
+
+.form__progress-checkbox::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.form_progress-input:checked + .form__progress-checkbox::before {
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 9px;
+}
+
+.form__contact-fieldset {
+  width: 280px;
+  margin: 0;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  padding-bottom: 25px;
+  border: none;
+}
+
+.form__contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form__contact-label {
+  width: 140px;
+  margin-left: 23px;
+  margin-bottom: 5px;
+}
+
+.form__os-container {
+  padding-top: 38px;
+  padding-bottom: 2px;
+  background-color: #f2f2f2;
+}
+
+.form__os-fieldset {
+  width: 280px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+}
+
+.form__os-legend {
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.form__os-list {
+  margin: 0;
+  margin-top: 39px;
+  padding: 0;
+  list-style: none;
+}
+
+.form__os-label {
+  width: 140px;
+  margin-left: 71px;
+}
+
+.form__os-item {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.form__os-label::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.form__os-input:checked + .form__os-label::before {
+  width: 15px;
+  height: 15px;
+  border: 10px solid #ffffff;
+  background-color: #d22856;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  top: -2px;
+  left: 2px;
+}
+
+.form__textarea-field {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-top: 33px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  width: 280px;
+  height: 201px;
+  padding-top: 14px;
+  padding-left: 18px;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__textarea-title {
+  width: 186px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 9px;
+}
+
+.form__button-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 8px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 16px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+}
+
+.form__foot-note {
+  width: 183px;
+  margin-top: 43px;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.form__foot-note-attention {
+  color: #d22856;
+}

@@ -13,6 +13,15 @@
   margin-bottom: 44px;
 }
 
+.page-slogan__text--form {
+  width: 84%;
+  margin-bottom: 29px;
+}
+
+.page-slogan__request {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-slogan__text {
     width: 73%;
@@ -31,6 +40,10 @@
     margin-top: 45px;
     margin-bottom: 69px;
   }
+
+  .page-slogan__request {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -44,5 +57,9 @@
   .page-slogan__text--bottom {
     margin-top: 7px;
     margin-bottom: 67px;
+  }
+
+  .page-slogan__text--form {
+    width: 746px;
   }
 }
