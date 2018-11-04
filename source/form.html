@@ -58,7 +58,7 @@
         </p>
       </section>
       <section class="form">
-        <form action="https://echo.htmlacademy.ru/" method="get">
+        <form class="form__structure" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__fieldset-name">
             <ul class="form__user-list">
               <li class="form__user-item">
@@ -111,11 +111,11 @@
             <ul class="form__contact-list">
               <li class="form__contact-item">
                 <label class="form__contact-label form__title" for="tel">Номер телефона</label>
-                <input class="form__cotact-input" type="tel" id="tel" placeholder="Номер, пожалуйста">
+                <input class="form__cotact-input form__cotact-input--phone" type="tel" id="tel" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label form__title" for="email">Адрес почты</label>
-                <input class="form__cotact-input" type="email" id="email" placeholder="Введите почту*">
+                <input class="form__cotact-input form__cotact-input--mail" type="email" id="email" placeholder="Введите почту*">
               </li>
             </ul>
           </fieldset>
@@ -138,10 +138,10 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__textarea-field">
-            <label class="form__textarea-title form__title" for="form__textarea">Опишите свои эмоции</label>
-            <textarea class="form__textarea" id="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
+          <fieldset class="form__textarea-field">
+            <legend class="form__textarea-title form__title">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
           <div class="form__button-container">
             <button class="form__button" type="submit">Отправить форму</button>
             <p class="form__foot-note"><span class="form__foot-note-attention">*</span> — обязательные поля</p>

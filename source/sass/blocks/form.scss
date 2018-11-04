@@ -1,6 +1,6 @@
 .form__fieldset-name {
   border: none;
-  width: 280px;
+  width: 87.5%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -124,7 +124,7 @@
 }
 
 .form__contact-fieldset {
-  width: 280px;
+  width: 87.5%;
   margin: 0;
   margin-top: 32px;
   margin-right: auto;
@@ -216,15 +216,16 @@
 .form__textarea-field {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 87.5%;
   margin-top: 33px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
+  border: none;
 }
 
 .form__textarea {
   box-sizing: border-box;
-  width: 280px;
   height: 201px;
   padding-top: 14px;
   padding-left: 18px;
@@ -242,7 +243,7 @@
 }
 
 .form__button-container {
-  width: 280px;
+  width: 87.5%;
   display: flex;
   flex-direction: column;
   margin-top: 48px;
@@ -275,4 +276,189 @@
 
 .form__foot-note-attention {
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-name {
+    order: 1;
+    width: 93.9%;
+    padding-bottom: 0;
+  }
+
+  .form__user-input {
+    flex-grow: 1;
+  }
+
+  .form__user-label {
+    margin-top: 17px;
+    margin-right: 22px;
+    margin-left: 0;
+  }
+
+  .form__user-item {
+    flex-direction: row;
+    margin-bottom: 53px;
+  }
+
+  .form__structure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__os-container {
+    order: 2;
+    margin-top: 6px;
+    padding-top: 0;
+    background-color: #ffffff;
+  }
+
+  .form__os-fieldset {
+    width: 93.4%;
+    padding-bottom: 15px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__os-legend {
+    width: 370px;
+  }
+
+  .form__os-list {
+    margin-top: 47px;
+  }
+
+  .form__os-label {
+    margin-left: 118px;
+  }
+
+  .form__os-label::before {
+    top: -3px;
+    left: 58px;
+  }
+
+  .form__os-input:checked + .form__os-label::before {
+    top: -1px;
+    left: 60px;
+  }
+
+  .form__contact-fieldset {
+    order: 3;
+    width: 93.4%;
+    margin-top: 55px;
+    padding-bottom: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__contact-legend {
+    display: block;
+    width: 258px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .form__contact-item {
+    flex-direction: column-reverse;
+    margin-bottom: 25px;
+  }
+
+  .form__contact-item:last-child {
+    margin-bottom: 22px;
+  }
+
+  .form__cotact-input {
+    margin-right: 58px;
+    margin-left: 58px;
+    margin-bottom: 10px;
+    padding-right: 80px;
+  }
+
+  .form__cotact-input--phone {
+    background:
+      url("../img/phone.svg") no-repeat right 20px bottom 20px,
+      linear-gradient(to left, #e5e5e5 62px, #ffffff 62px, #ffffff 100%);
+  }
+
+  .form__cotact-input--mail {
+    background:
+      url("../img/mail.svg") no-repeat right 22px bottom 22px,
+      linear-gradient(to left, #e5e5e5 62px, #ffffff 62px, #ffffff 100%);
+  }
+
+  .form__contact-list {
+    padding-top: 37px;
+  }
+
+  .form__contact-label {
+    margin-left: 79px;
+  }
+
+  .form__progress-fieldset-container {
+    order: 4;
+    margin-top: 19px;
+    background-color: #ffffff;
+  }
+
+  .form__progress-fieldset {
+    width: 93.4%;
+    padding-bottom: 6px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__progress-legend {
+    width: 435px;
+  }
+
+  .form__progress-list {
+    margin-top: 48px;
+  }
+
+  .form__progress-checkbox {
+    margin-left: 118px;
+    display: block;
+  }
+
+  .form__progress-checkbox::before {
+    left: 58px;
+  }
+
+  .form__textarea-field {
+    order: 5;
+    width: 93.4%;
+    margin-top: 51px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__textarea-title {
+    margin-bottom: 0;
+    width: 259px;
+    text-align: center;
+  }
+
+  .form__textarea {
+    width: 81%;
+    height: 193px;
+    margin-top: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 51px;
+  }
+
+  .form__button-container {
+    order: 6;
+    width: 94%;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 67px;
+    padding-bottom: 50px;
+  }
+
+  .form__button {
+    width: 48%;
+  }
+
+  .form__foot-note {
+    margin: 0;
+    margin-top: 24px;
+    margin-left: auto;
+  }
 }
