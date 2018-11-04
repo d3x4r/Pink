@@ -278,6 +278,10 @@
   color: #d22856;
 }
 
+.form__foot-note__add {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form__fieldset-name {
     order: 1;
@@ -461,4 +465,155 @@
     margin-top: 24px;
     margin-left: auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .form__structure {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset-name {
+    width: 470px;
+    margin: 0;
+    padding: 0;
+    margin-top: 21px;
+    margin-right: 35px;
+  }
+
+  .form__user-item {
+    width: 435px;
+  }
+
+  .form__os-fieldset {
+    width: 431px;
+    margin: 0;
+  }
+
+  .form__os-list {
+    margin-top: 49px;
+  }
+
+  .form__os-label {
+    margin-left: 134px;
+  }
+
+  .form__os-label::before {
+    left: 74px;
+  }
+
+  .form__os-input:checked + .form__os-label::before {
+    top: -1px;
+    left: 76px;
+  }
+
+  .form__contact-fieldset {
+    width: 940px;
+    margin-top: 5px;
+  }
+
+  .form__contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 34px;
+    padding-bottom: 9px;
+    align-items: flex-start;
+  }
+
+  .form__cotact-input {
+    width: 374px;
+    margin: 0;
+    margin-left: 59px;
+    margin-bottom: 10px;
+  }
+
+  .form__contact-item {
+    margin-bottom: 0;
+  }
+
+  .form__contact-item:nth-child(2n) {
+    margin-left: auto;
+    margin-right: 58px;
+  }
+
+  .form__contact-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__progress-fieldset-container {
+    width: 936px;
+  }
+
+  .form__progress-fieldset {
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .form__progress-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__progress-item {
+    width: 250px;
+    margin: 0;
+    // margin-right: 65px;
+    margin-bottom: 52px;
+  }
+
+  // .form__progress-item:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+
+  .form__progress-item--selfie{
+    order: 1;
+  }
+  .form__progress-item--tan{
+    order: 4;
+  }
+  .form__progress-item--chuck{
+    order: 2;
+  }
+  .form__progress-item--souvenir{
+    order: 5;
+  }
+  .form__progress-item--tower{
+    order: 3;
+  }
+  .form__progress-item--hotel{
+    order: 6;
+  }
+
+  .form__textarea-field {
+    width: 940px;
+  }
+
+  .form__textarea {
+    width: 820px;
+    height: 128px;
+    margin-top: 28px;
+    margin-bottom: 43px;
+  }
+
+  .form__button-container {
+    width: 940px;
+    margin-top: 65px;
+    padding-bottom: 2px;
+  }
+
+  .form__button {
+    width: 300px;
+  }
+
+  .form__foot-note {
+    width: 314px;
+  }
+
+  .form__foot-note__add {
+    display: inline;
+  }
+
 }
