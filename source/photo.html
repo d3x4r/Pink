@@ -218,61 +218,65 @@
         </section>
       </section>
       <section class="page-slogan">
-        <p class="text-regular">Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        <p class="page-slogan__text page-slogan__text--bottom text-regular">Затмите их всех! <span class="page-slogan__proposal">Выкладывайте&nbsp;все, что накопилось в телефоне!</span>
         </p>
       </section>
       <section class="photo-edit">
-        <h2 class="visually-hidden">Загрузка и обработка своих фото.</h2>
-        <picture>
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+        <div class="photo-edit__container">
+          <h2 class="visually-hidden">Загрузка и обработка своих фото.</h2>
+          <div class="photo-edit__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-          <img class="photo-edit__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
-              alt="Редактируемое изображение">
-        </picture>
-        <div class="photo-edit__tools">
-          <ul class="photo-edit__tool-list">
-            <li class="photo-edit__tool">
-              <svg class="photo-edit__tool-image photo-edit__tool-image--active" width="44" height="44">
-                <use xlink:href="#icon-editor-crop"></use>
-              </svg>
-              <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                  <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
-              </div>
-            </li>
-            <li class="photo-edit__tool">
-              <svg class="photo-edit__tool-image" width="48" height="43">
-                <use xlink:href="#icon-editor-fill"></use>
-              </svg>
-              <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
-              </div>
-            </li>
-            <li class="photo-edit__tool">
-              <svg class="photo-edit__tool-image" width="32" height="32">
-                <use xlink:href="#icon-editor-contrast"></use>
-              </svg>
-              <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                  <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
-              </div>
-            </li>
-          </ul>
-          <div class="photo-edit__range photo-edit__range--small-width">
-              <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-edit__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                  alt="Редактируемое изображение">
+            </picture>
           </div>
-          <div class="photo-edit__load-items">
-            <button class="button photo-edit__button" type="submit">Запостить</button>
-            <button class="button photo-edit__button photo-edit__button--clear" type="reset">Отмена</button>
+          <div class="photo-edit__tools">
+            <ul class="photo-edit__tool-list">
+              <li class="photo-edit__tool">
+                <svg class="photo-edit__tool-image photo-edit__tool-image--crop photo-edit__tool-image--active" width="44" height="44" fill="#b5b9be">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+                <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
+                    <div class="photo-edit__range-toggle photo-edit__range-toggle--crop" aria-label="Значение фильтра"></div>
+                </div>
+              </li>
+              <li class="photo-edit__tool">
+                <svg class="photo-edit__tool-image photo-edit__tool-image--fill" width="49" height="46" fill="#b5b9be">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+                <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
+                  <div class="photo-edit__range-toggle photo-edit__range-toggle--fill" aria-label="Значение фильтра"></div>
+                </div>
+              </li>
+              <li class="photo-edit__tool photo-edit__tool--contrast">
+                <svg class="photo-edit__tool-image photo-edit__tool-image--contrast" width="32" height="32" fill="#b5b9be">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+                <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
+                    <div class="photo-edit__range-toggle photo-edit__range-toggle--contrast" aria-label="Значение фильтра"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="photo-edit__range photo-edit__range--general photo-edit__range--small-width">
+                <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
+            </div>
+            <div class="photo-edit__load-items">
+              <button class="button photo-edit__button" type="submit">Запостить</button>
+              <button class="button photo-edit__button photo-edit__button--clear" type="reset">Отмена</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer footer">
+    <footer class="footer">
       <div class="footer__logo">
-        <a href="index.html" aria-label="Логотип сайта">
+        <a aria-label="Логотип сайта">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
             <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта">
           </picture>
         </a>
@@ -281,21 +285,21 @@
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <svg width="18" height="14">
+              <svg width="18" height="14" fill="#d22856">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
-              <svg width="9" height="18">
+            <a class="footer__social-link footer__social-link--facebook" href="#">
+              <svg width="9" height="18" fill="#d22856">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <svg width="15" height="13">
+              <svg width="15" height="13" fill="#d22856">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -303,9 +307,10 @@
         </ul>
       </div>
       <div class="footer__developers">
-        <address>Разработано
-          <a href="#">
-            <svg width="27" height="34">
+        <address class="footer__developers-text">
+          <span class="footer__developers-title">Разработано</span>
+          <a class="footer__developers-link" href="#">
+            <svg width="27" height="34" fill="#d22856">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
           </a>
