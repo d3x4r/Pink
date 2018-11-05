@@ -57,11 +57,33 @@
 }
 
 .contacts__value {
+  position: relative;
   display: block;
   font-size: 24px;
   line-height: 29px;
   font-weight: lighter;
   color: #d22856;
+}
+
+.contacts__value--mail:hover {
+  color: #283645;
+}
+
+.contacts__value--mail:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #c9cdd0;
+  left: 0;
+  bottom: 0;
+  box-shadow:
+    0 1px 0 0 #283645,
+    0 2px 0 0 #5d6873;
+}
+
+.contacts__value--mail:active {
+  opacity: 0.3;
 }
 
 .contacts__map-wrapper {

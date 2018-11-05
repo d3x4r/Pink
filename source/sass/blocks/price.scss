@@ -120,6 +120,14 @@
   cursor: pointer;
 }
 
+.price__slider-toggle:hover::before {
+  border-color: #7e868f;
+}
+
+.price__slider-toggle:active::before {
+  border-color: #e9ebec;
+}
+
 .price__slider-toggle-1::before {
   top: 0;
   left: 0;

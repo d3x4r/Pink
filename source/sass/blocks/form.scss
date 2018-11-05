@@ -49,6 +49,16 @@
   border: 1px solid #e5e5e5;
 }
 
+.form__user-input:hover,
+.form__cotact-input:hover {
+  border-color: #283645;
+}
+
+.form__user-input:focus,
+.form__cotact-input:focus {
+  border-color: #d22856;
+}
+
 .form__user-input::placeholder,
 .form__cotact-input::placeholder,
 .form__textarea::placeholder {
@@ -117,10 +127,25 @@
   border: 2px solid #e5e5e5;
 }
 
+.form__progress-checkbox:hover::before {
+  border-color: #283645;
+}
+
+.form__progress-checkbox:active::before {
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 9px;
+  border-color: #d22856;
+}
+
 .form_progress-input:checked + .form__progress-checkbox::before {
   background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   background-position: 7px 9px;
+}
+
+.form_progress-input:checked + .form__progress-checkbox:active::before {
+  background-image: none;
 }
 
 .form__contact-fieldset {
@@ -203,12 +228,40 @@
   border-radius: 50%;
 }
 
+.form__os-label:hover::before {
+  border-color: #283645;
+}
+
+.form__os-label:active::before {
+  width: 15px;
+  height: 15px;
+  border: 10px solid #ffffff;
+  background-color: #d22856;
+  box-shadow: 0 0 0 2px #d22856;
+  top: -2px;
+  left: 2px;
+}
+
 .form__os-input:checked + .form__os-label::before {
   width: 15px;
   height: 15px;
   border: 10px solid #ffffff;
   background-color: #d22856;
   box-shadow: 0 0 0 2px #e5e5e5;
+  top: -2px;
+  left: 2px;
+}
+
+.form__os-input:checked + .form__os-label:hover::before {
+  box-shadow: 0 0 0 2px #283645;
+}
+
+.form__os-input:checked + .form__os-label:active::before {
+  width: 15px;
+  height: 15px;
+  border: 10px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #d22856;
   top: -2px;
   left: 2px;
 }
@@ -225,6 +278,7 @@
 }
 
 .form__textarea {
+  width: 100%;
   box-sizing: border-box;
   height: 201px;
   padding-top: 14px;
@@ -233,6 +287,14 @@
   resize: none;
   font-size: 18px;
   line-height: 30px;
+}
+
+.form__textarea:hover {
+  border-color: #283645;
+}
+
+.form__textarea:focus {
+  border-color: #d22856;
 }
 
 .form__textarea-title {
@@ -264,6 +326,24 @@
 
   background-color: #2aab6d;
   border: none;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+}
+
+.form__button:active:disabled {
+  color: #ffffff;
 }
 
 .form__foot-note {
@@ -334,12 +414,22 @@
     margin-left: 118px;
   }
 
-  .form__os-label::before {
+  .form__os-label::before, {
     top: -3px;
     left: 58px;
   }
 
+  .form__os-label:active::before {
+    top: -1px;
+    left: 60px;
+  }
+
   .form__os-input:checked + .form__os-label::before {
+    top: -1px;
+    left: 60px;
+  }
+
+  .form__os-input:checked + .form__os-label:active::before {
     top: -1px;
     left: 60px;
   }
@@ -505,7 +595,13 @@
     left: 74px;
   }
 
-  .form__os-input:checked + .form__os-label::before {
+  .form__os-label:active::before {
+    top: -0.5px;
+    left: 76px;
+  }
+
+  .form__os-input:checked + .form__os-label::before,
+  .form__os-input:checked + .form__os-label:active::before {
     top: -1px;
     left: 76px;
   }

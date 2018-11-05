@@ -27,6 +27,14 @@
   margin-right: 35px;
 }
 
+.photo-edit__tool:hover .photo-edit__tool-image {
+  fill: #8d949b;
+}
+
+.photo-edit__tool:hover .photo-edit__tool-image--active {
+  fill: #d22856;
+}
+
 .photo-edit__tool:nth-child(3n) {
   margin-right: 0;
 }
@@ -61,6 +69,10 @@
   cursor: pointer;
 }
 
+.photo-edit__range-toggle:active {
+  background-color: #d22856;
+}
+
 .photo-edit__range--general {
   display: block;
   margin-top: 34px;
@@ -80,11 +92,32 @@
   cursor: pointer;
 }
 
+.photo-edit__button:hover {
+  color: #ffffff;
+  background-color: #d22856;
+  border-color: #d22856;
+}
+
+.photo-edit__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .photo-edit__button--clear {
   color: #dddfe0;
   background-color: transparent;
   border-color: #dddfe0;
   cursor: pointer;
+}
+
+.photo-edit__button--clear:hover {
+  color: #b5b9be;
+  background-color: #f2f2f2;
+  border-color: #b5b9be;
+}
+
+.photo-edit__button--clear:active {
+  background-color: #b5b9be;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .photo-edit__tool-image,
@@ -188,6 +221,14 @@
 
   .photo-edit__range-toggle--contrast {
     right: 92px;
+  }
+
+  .photo-edit__tool:hover .photo-edit__tool-image {
+    fill: #d22856;
+  }
+
+  .photo-edit__tool:hover .photo-edit__tool-image--active {
+    fill: #d22856;
   }
 }
 
