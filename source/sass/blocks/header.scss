@@ -21,6 +21,15 @@
   margin-top: 26px;
 }
 
+.header__button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.header__button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .header__store-list {
   display: flex;
   flex-wrap: wrap;

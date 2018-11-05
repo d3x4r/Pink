@@ -20,15 +20,19 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <nav class="site-navigation">
+      <nav class="site-navigation site-navigation--closed site-navigation--nojs">
         <div class="site-navigation__wrapper">
           <div class="site-navigation__logo-wrapper">
             <a class="site-navigation__logo" href="index.html" aria-label="Логотип сайта">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="site-navigation__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта">
-              </picture>
+              <svg class="site-navigation__logo-img site-navigation__logo-img--mobile" width="75" height="22" fill="#ffffff">
+                <use xlink:href="#icon-logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="site-navigation__logo-img site-navigation__logo-img--tablet" width="147" height="40" fill="#ffffff">
+                <use xlink:href="#icon-logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="site-navigation__logo-img site-navigation__logo-img--desktop" width="147" height="40" fill="#ffffff">
+                <use xlink:href="#icon-logo-pink-white-desktop"></use>
+              </svg>
             </a>
             <button class="site-navigation__toggle" type="button" aria-label="Показать или закрыть меню"></button>
           </div>
@@ -37,7 +41,7 @@
               <a class="site-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="site-navigation__item">
-              <a class="site-navigation__link">Фотографии</a>
+              <a class="site-navigation__link site-navigation__link--active">Фотографии</a>
             </li>
             <li class="site-navigation__item">
               <a class="site-navigation__link" href="form.html">Конкурс</a>
@@ -319,5 +323,6 @@
         </address>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
