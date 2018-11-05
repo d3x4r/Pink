@@ -558,32 +558,50 @@
   }
 
   .form__progress-item {
-    width: 250px;
+    width: 200px;
     margin: 0;
-    // margin-right: 65px;
+    margin-left: 112px;
     margin-bottom: 52px;
   }
 
+  .form__progress-item:last-child {
+    margin-left: 112px;
+  }
+
+  .form__progress-checkbox {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__progress-checkbox::before {
+    left: -54px;
+  }
   // .form__progress-item:nth-child(3n) {
   //   margin-right: 0;
   // }
 
-  .form__progress-item--selfie{
+  .form__progress-item--selfie {
     order: 1;
   }
-  .form__progress-item--tan{
+
+  .form__progress-item--tan {
     order: 4;
   }
-  .form__progress-item--chuck{
+
+  .form__progress-item--chuck {
     order: 2;
   }
-  .form__progress-item--souvenir{
+
+  .form__progress-item--souvenir {
     order: 5;
   }
-  .form__progress-item--tower{
+
+  .form__progress-item--tower {
     order: 3;
   }
-  .form__progress-item--hotel{
+
+  .form__progress-item--hotel {
     order: 6;
   }
 
@@ -615,5 +633,4 @@
   .form__foot-note__add {
     display: inline;
   }
-
 }
