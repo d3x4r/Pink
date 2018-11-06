@@ -1,11 +1,12 @@
 .header {
   background-color: #202b37;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 49%;
+  background-position: center 100%;
+  background-size: auto;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 }
 
@@ -14,11 +15,8 @@
 }
 
 .header__app-preview {
+  display: block;
   margin-top: 109px;
-}
-
-.header__button {
-  margin-top: 26px;
 }
 
 .header__button:hover {
@@ -82,11 +80,22 @@
   padding-bottom: 55px;
 }
 
+.header__button-wrapper {
+  padding-top: 30px;
+  background-color: #202b37;
+}
+
+.header--photo,
+.header--form {
+  background-position: center top;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 49%;
+    background-position: center 100%;
+    background-size: auto;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -157,6 +166,16 @@
     width: 485px;
     padding-bottom: 79px;
   }
+
+  .header__button-wrapper {
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  .header--photo,
+  .header--form {
+    background-position: center top;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -209,5 +228,10 @@
 
   .header__caption--form {
     width: 760px;
+  }
+
+  .header--photo,
+  .header--form {
+    background-position: center top;
   }
 }

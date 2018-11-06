@@ -7,7 +7,7 @@
   box-sizing: border-box;
   width: 140px;
   height: 36px;
-  top: 0;
+  top: 1px;
   right: 20px;
   margin-top: 0;
   padding-left: 19px;
@@ -22,21 +22,37 @@
   background-color: #d22856;
 }
 
+.panorama__image-link {
+  display: block;
+  padding-top: 1px;
+}
+
 .panorama__image {
   display: block;
   width: 100%;
+  min-height: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .panorama__image-container {
     width: 100%;
     height: 509px;
+  }
+
+  .panorama__image-link {
+    width: 100%;
+    height: 100%;
+    position: relative;
     overflow: hidden;
   }
 
   .panorama__image {
-    width: 100%;
-    min-height: 509px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .panorama__title {
@@ -48,5 +64,13 @@
   .panorama__title {
     top: 54px;
     right: 10px;
+  }
+
+  .panorama__image-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 505px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
