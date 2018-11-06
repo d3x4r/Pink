@@ -1,5 +1,5 @@
 .price {
-  padding-top: 95px;
+  padding-top: 94px;
   padding-bottom: 43px;
   background-image: url("../img/table-slider.png");
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@
   display: block;
   font-size: 24px;
   line-height: 30px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #ffffff;
 }
 
@@ -135,7 +135,7 @@
 
 .price__slider-toggle-2::before {
   top: 0;
-  left: 50%;
+  left: 49%;
 }
 
 .price__slider-toggle-3::before {
@@ -173,8 +173,8 @@
   }
 
   .price__table-pole {
-    padding-top: 12px;
-    padding-bottom: 7px;
+    padding-top: 11px;
+    padding-bottom: 8px;
   }
 
   .price__table-data {
@@ -233,7 +233,7 @@
   }
 
   .price__table-data {
-    width: 116px;
+    width: 122px;
     padding-top: 15px;
     padding-left: 21px;
     padding-bottom: 17px;

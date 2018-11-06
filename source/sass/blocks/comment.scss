@@ -1,6 +1,6 @@
 .comment {
-  width: 86%;
-  margin-top: 42px;
+  width: 88%;
+  margin-top: 44px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 35px;
@@ -63,7 +63,7 @@
 
 .comment__slider-toggle-3::before {
   top: 0;
-  left: 50%;
+  left: 49%;
 }
 
 .comment__slider-input:checked + .comment__slider-toggle::before {
@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    width: 92%;
+    width: 95%;
     padding-bottom: 10px;
   }
 
@@ -123,12 +123,12 @@
 
   .comment__author {
     margin-top: 19px;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: normal;
   }
 
   .comment__author-description {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .comment__slider-buttons {

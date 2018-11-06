@@ -30,7 +30,7 @@
 }
 
 .offer__list {
-  width: 80%;
+  width: 81.1%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -91,7 +91,7 @@
   .offer__wrapper-content {
     padding-top: 122px;
     background-image: url("../img/bg-description-tablet.png");
-    background-position: center 16px;
+    background-position: center 23px;
     padding-bottom: 3px;
   }
 
@@ -149,13 +149,13 @@
     order: 1;
     display: flex;
     flex-wrap: wrap;
-    width: 930px;
+    width: 940px;
     margin-right: auto;
     margin-left: auto;
   }
 
   .offer__app-preview {
-    margin-right: 27px;
+    margin-right: 32px;
   }
 
   .offer__app-preview:nth-child(3n) {
@@ -185,8 +185,8 @@
   }
 
   .offer__item {
-    width: 230px;
-    margin-right: 92px;
+    width: 238px;
+    margin-right: 80px;
   }
 
   .offer__item:nth-child(3n) {

@@ -3,6 +3,7 @@
   width: 87.5%;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 11px;
 }
 
 .form__user-list {
@@ -14,7 +15,7 @@
 .form__user-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .form__title {
@@ -42,11 +43,16 @@
 .form__user-input,
 .form__cotact-input {
   box-sizing: border-box;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-left: 21px;
   padding-bottom: 13px;
   height: 62px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
 }
 
 .form__user-input:hover,
@@ -69,8 +75,8 @@
 }
 
 .form__user-label {
-  margin-left: 24px;
-  margin-bottom: 4px;
+  margin-left: 23px;
+  margin-bottom: 6px;
 }
 
 .form__progress-list {
@@ -208,7 +214,7 @@
 
 .form__os-label {
   width: 140px;
-  margin-left: 71px;
+  margin-left: 70px;
 }
 
 .form__os-item {
@@ -270,7 +276,7 @@
   display: flex;
   flex-direction: column;
   width: 87.5%;
-  margin-top: 33px;
+  margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -281,8 +287,8 @@
   width: 100%;
   box-sizing: border-box;
   height: 201px;
-  padding-top: 14px;
-  padding-left: 18px;
+  padding-top: 15px;
+  padding-left: 19px;
   border: 2px solid #e5e5e5;
   resize: none;
   font-size: 18px;
@@ -308,7 +314,7 @@
   width: 87.5%;
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 49px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 8px;
@@ -348,7 +354,7 @@
 
 .form__foot-note {
   width: 183px;
-  margin-top: 43px;
+  margin-top: 42px;
   margin-right: auto;
   margin-left: auto;
   text-transform: uppercase;
@@ -375,7 +381,7 @@
 
   .form__user-label {
     margin-top: 17px;
-    margin-right: 22px;
+    margin-right: 18px;
     margin-left: 0;
   }
 
@@ -570,12 +576,13 @@
     width: 470px;
     margin: 0;
     padding: 0;
-    margin-top: 21px;
+    margin-top: 19px;
     margin-right: 35px;
   }
 
   .form__user-item {
     width: 435px;
+    margin-bottom: 55px;
   }
 
   .form__os-fieldset {
@@ -608,15 +615,19 @@
 
   .form__contact-fieldset {
     width: 940px;
-    margin-top: 5px;
+    margin-top: 0;
   }
 
   .form__contact-list {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 34px;
+    padding-top: 36px;
     padding-bottom: 9px;
     align-items: flex-start;
+  }
+
+  .form__contact-label {
+    margin-left: 77px;
   }
 
   .form__cotact-input {
@@ -639,6 +650,11 @@
     margin-bottom: 0;
   }
 
+  .form__cotact-input,
+  .form__user-input {
+    padding-left: 18px;
+  }
+
   .form__progress-fieldset-container {
     width: 936px;
   }
@@ -651,18 +667,19 @@
   .form__progress-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 47px;
   }
 
   .form__progress-item {
     width: 200px;
     margin: 0;
-    margin-left: 112px;
+    // margin-left: 112px;
     margin-bottom: 52px;
   }
 
-  .form__progress-item:last-child {
-    margin-left: 112px;
-  }
+  // .form__progress-item:last-child {
+  //   margin-left: 112px;
+  // }
 
   .form__progress-checkbox {
     width: 100%;
@@ -671,7 +688,7 @@
   }
 
   .form__progress-checkbox::before {
-    left: -54px;
+    left: -58px;
   }
   // .form__progress-item:nth-child(3n) {
   //   margin-right: 0;
@@ -679,26 +696,32 @@
 
   .form__progress-item--selfie {
     order: 1;
+    margin-left: 116px;
   }
 
   .form__progress-item--tan {
     order: 4;
+    margin-left: 116px;
   }
 
   .form__progress-item--chuck {
     order: 2;
+    margin-left: 115px;
   }
 
   .form__progress-item--souvenir {
     order: 5;
+    margin-left: 115px;
   }
 
   .form__progress-item--tower {
     order: 3;
+    margin-left: 97px;
   }
 
   .form__progress-item--hotel {
     order: 6;
+    margin-left: 96px;
   }
 
   .form__textarea-field {

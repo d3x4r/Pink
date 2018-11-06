@@ -11,15 +11,14 @@
     <script src="js/pixel-glass/script.js"></script>
     <!------------- pixel-glass-end ------------>
     <link href="css/style.min.css" rel="stylesheet">
-    <!-- <link rel="preload" href="/fonts/opensans.woff2" as="font"> -->
-    <!-- <script src="js/picturefill.min.js"></script> -->
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <nav class="site-navigation site-navigation--closed site-navigation--nojs">
+      <nav class="site-navigation site-navigation--open site-navigation--nojs">
         <div class="site-navigation__wrapper">
           <div class="site-navigation__logo-wrapper">
             <a class="site-navigation__logo" href="index.html" aria-label="Логотип сайта">
@@ -67,7 +66,7 @@
             <ul class="form__user-list">
               <li class="form__user-item">
                 <label class="form__user-label form__title" for="second-name">Фамилия:</label>
-                <input class="form__user-input" type="text" id="second-name" placeholder="Укажите фамилию*">
+                <input class="form__user-input" type="text" id="second-name" placeholder="Укажите фамилию *">
               </li>
               <li class="form__user-item">
                 <label class="form__user-label form__title" for="first-name">Имя:</label>
@@ -148,7 +147,7 @@
           </fieldset>
           <div class="form__button-container">
             <button class="form__button" type="submit" >Отправить форму</button>
-            <p class="form__foot-note"><span class="form__foot-note-attention">*</span> — обязательные поля <span class="form__foot-note__add">для заполнения</span></p>
+            <p class="form__foot-note"><span class="form__foot-note-attention">*</span> — обязательные <span class="form__foot-note__add">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
