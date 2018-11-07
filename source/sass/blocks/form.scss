@@ -41,7 +41,7 @@
 }
 
 .form__user-input,
-.form__cotact-input {
+.form__contact-input {
   box-sizing: border-box;
   padding-top: 14px;
   padding-left: 21px;
@@ -56,17 +56,17 @@
 }
 
 .form__user-input:hover,
-.form__cotact-input:hover {
+.form__contact-input:hover {
   border-color: #283645;
 }
 
 .form__user-input:focus,
-.form__cotact-input:focus {
+.form__contact-input:focus {
   border-color: #d22856;
 }
 
 .form__user-input::placeholder,
-.form__cotact-input::placeholder,
+.form__contact-input::placeholder,
 .form__textarea::placeholder {
   font-size: 18px;
   line-height: 30px;
@@ -465,20 +465,20 @@
     margin-bottom: 22px;
   }
 
-  .form__cotact-input {
+  .form__contact-input {
     margin-right: 58px;
-    margin-left: 58px;
+    margin-left: 56px;
     margin-bottom: 10px;
     padding-right: 80px;
   }
 
-  .form__cotact-input--phone {
+  .form__contact-input--phone {
     background:
       url("../img/phone.svg") no-repeat right 20px bottom 20px,
       linear-gradient(to left, #e5e5e5 62px, #ffffff 62px, #ffffff 100%);
   }
 
-  .form__cotact-input--mail {
+  .form__contact-input--mail {
     background:
       url("../img/mail.svg") no-repeat right 22px bottom 22px,
       linear-gradient(to left, #e5e5e5 62px, #ffffff 62px, #ffffff 100%);
@@ -630,11 +630,12 @@
     margin-left: 77px;
   }
 
-  .form__cotact-input {
+  .form__contact-input {
     width: 374px;
     margin: 0;
     margin-left: 59px;
     margin-bottom: 10px;
+    padding-left: 18px;
   }
 
   .form__contact-item {
@@ -650,9 +651,8 @@
     margin-bottom: 0;
   }
 
-  .form__cotact-input,
   .form__user-input {
-    padding-left: 18px;
+    padding-left: 21px;
   }
 
   .form__progress-fieldset-container {
