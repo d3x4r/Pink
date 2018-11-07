@@ -66,11 +66,11 @@
             <ul class="form__user-list">
               <li class="form__user-item">
                 <label class="form__user-label form__title" for="second-name">Фамилия:</label>
-                <input class="form__user-input" type="text" id="second-name" placeholder="Укажите фамилию *">
+                <input class="form__user-input form__user-input--second-name" type="text" id="second-name" placeholder="Укажите фамилию *">
               </li>
               <li class="form__user-item">
                 <label class="form__user-label form__title" for="first-name">Имя:</label>
-                <input class="form__user-input" type="text" id="first-name" placeholder="Введите ваше имя *">
+                <input class="form__user-input form__user-input--first-name" type="text" id="first-name" placeholder="Введите ваше имя *">
               </li>
               <li class="form__user-item">
                 <label class="form__user-label form__title" for="third-name">Отчество:</label>
@@ -206,16 +206,16 @@
         <h2 class="modal__title">Ваша заявка отправлена</h2>
         <p class="modal__text">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
-      <div class="modal__button-wrapper">
-        <button class="modal__button" type="button">Закрыть окно</button>
+      <div class="modal__button-wrapper modal__button-wrapper--failure">
+        <button class="modal__button modal__button--succes" type="button">Закрыть окно</button>
       </div>
     </section>
     <section class="modal modal--failure">
       <div class="modal__content">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <div class="modal__button-wrapper modal__button-wrapper--failure">
-          <button class="modal__button" type="button">Ок</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button modal__button--failure" type="button">Ок</button>
         </div>
       </div>
     </section>

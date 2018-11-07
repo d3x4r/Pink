@@ -17,15 +17,18 @@
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .modal__text {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 40px;
 }
 
 .modal__button {
-  width: 280px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 16px;
@@ -40,6 +43,83 @@
   border: none;
 }
 
+.modal__button:hover {
+  background-color: #1c9b5e;
+}
+
+.modal__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .modal {
   display: none;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 41px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.modal--show {
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal--close {
+  display: none;
+}
+
+.modal--succes {
+  padding-bottom: 0;
+}
+
+.modal--succes .modal__text {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.modal__button--succes {
+  width: 280px;
+  margin-top: 40px;
+  margin-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 450px;
+  }
+
+  .modal__title {
+    width: 224px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 777px;
+  }
+
+  .modal__content {
+    width: 435px;
+  }
+
+  .modal__title {
+    width: 400px;
+  }
 }
