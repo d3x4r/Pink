@@ -23,6 +23,7 @@
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 180px;
   margin: 0;
   margin-top: 40px;
@@ -48,6 +49,7 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   margin-right: 12px;
+  margin-bottom: 10px;
 }
 
 .footer__social-item:hover {
@@ -68,7 +70,7 @@
 
 .footer__developers {
   width: 129px;
-  margin-top: 39px;
+  margin-top: 30px;
 }
 
 .footer__developers-text {
@@ -147,6 +149,7 @@
   .footer {
     width: 940px;
     padding-top: 69px;
+    padding-bottom: 72px;
   }
 
   .footer__developers-title {

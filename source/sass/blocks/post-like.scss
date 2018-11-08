@@ -22,6 +22,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
+  line-height: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,5 +55,11 @@
   .post-like__text {
     order: 1;
     width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-like {
+    margin-right: 0;
   }
 }

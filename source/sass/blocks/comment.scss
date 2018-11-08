@@ -71,6 +71,11 @@
   box-shadow: 0 0 0 3px #283645;
 }
 
+.comment__slider-second,
+.comment__slider-third {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .comment {
     width: 95%;
@@ -109,7 +114,7 @@
     background-position: center 15px;
   }
 
-  .comment__slider-first {
+  .comment__wrapper {
     position: relative;
   }
 
@@ -122,13 +127,14 @@
   }
 
   .comment__author {
-    margin-top: 19px;
-    font-size: 21px;
-    font-weight: normal;
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
   }
 
   .comment__author-description {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .comment__slider-buttons {

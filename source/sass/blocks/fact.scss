@@ -26,15 +26,23 @@
 
   .fact__wrapper::before {
     position: absolute;
+    content: "";
+    top: 114px;
+    left: 31px;
+    width: 176px;
+    height: 176px;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .fact__wrapper::after {
+    position: absolute;
     content: "24";
-    top: 115px;
-    left: 33px;
+    top: 154px;
+    left: 77px;
     font-size: 96px;
     font-weight: bold;
     color: #d22856;
-    border: 14px solid #d22856;
-    padding: 32px;
-    border-radius: 50%;
   }
 
   .fact__title {
@@ -74,12 +82,15 @@
   .fact__wrapper::before {
     top: 98px;
     left: 22px;
+    width: 219px;
+    height: 219px;
+    border: 17px solid #d22856;
+  }
+
+  .fact__wrapper::after {
+    top: 149px;
+    left: 79px;
     font-size: 120px;
-    font-weight: bold;
-    color: #d22856;
-    border: 16px solid #d22856;
-    padding: 42px;
-    border-radius: 50%;
   }
 
   .fact__title {

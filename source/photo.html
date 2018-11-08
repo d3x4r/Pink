@@ -11,6 +11,7 @@
     <script src="js/pixel-glass/script.js"></script> -->
     <!------------- pixel-glass-end ------------>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -45,7 +46,7 @@
               <a class="site-navigation__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">HTML Academy</a>
+              <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -80,13 +81,17 @@
           <p class="post-text__author">Анна <span class="post-text__date">(5 минут назад)</span></p>
           <p class="post-text__message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="post-like">
-            <button class="post-like__button" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+            <button class="post-like__button" type="button" aria-label="Поставить лайк">
+              <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </button>
             <p class="post-like__text">Нравится: <span class="post-like__number">215</span></p>
           </div>
         </div>
       </section>
       <section class="posts">
-        <section class="post">
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
@@ -103,12 +108,16 @@
             <p class="post-text__author post-text__author--usual">Левон <span class="post-text__date post-text__date--usual">(5 часов назад)</span></p>
             <p class="post-text__message post-text__message--usual">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">356</span></p>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
@@ -125,12 +134,16 @@
             <p class="post-text__author post-text__author--usual">Антон <span class="post-text__date post-text__date--usual">(12 часов назад)</span></p>
             <p class="post-text__message post-text__message--usual">Соседи будут рады!</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">666</span></p>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
@@ -147,12 +160,16 @@
             <p class="post-text__author post-text__author--usual">Борис <span class="post-text__date post-text__date--usual">(20 часов назад)</span></p>
             <p class="post-text__message post-text__message--usual">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">215</span></p>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
@@ -169,12 +186,16 @@
             <p class="post-text__author post-text__author--usual">Сергей <span class="post-text__date post-text__date--usual">(25 часов назад)</span></p>
             <p class="post-text__message post-text__message--usual">Самая кубанская в мире!</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">4</span></p>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
@@ -189,14 +210,18 @@
           </a>
           <div class="post-text post-text--usual">
             <p class="post-text__author post-text__author--usual">Максим <span class="post-text__date post-text__date--usual">(40 часов назад)</span></p>
-            <p class="post-text__message post-text__message--usual">Где снег-то ?</p>
+            <p class="post-text__message post-text__message--usual">Где снег-то?</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">150</span></p>
             </div>
           </div>
-        </section>
-        <section class="post">
+        </article>
+        <article class="post">
           <a class="post__image-link" href="#" >
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
@@ -213,11 +238,15 @@
             <p class="post-text__author post-text__author--usual">Надежда <span class="post-text__date post-text__date--usual">(45 часов назад)</span></p>
             <p class="post-text__message post-text__message--usual">Всем GM и взаимные лайки</p>
             <div class="post-like post-like--usual">
-              <button class="post-like__button post-like__button--usual" type="button"><img src="img/heart.svg" width="13" height="12" alt="Поставить лайк"></button>
+              <button class="post-like__button post-like__button--usual" type="button" aria-label="Поставить лайк">
+                <svg class="post-like__icon" width="13" height="12" fill="#d22856">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </button>
               <p class="post-like__text post-like__text--usual">Нравится: <span class="post-like__number">2560</span></p>
             </div>
           </div>
-        </section>
+        </article>
       </section>
       <section class="page-slogan">
         <p class="page-slogan__text page-slogan__text--bottom text-regular">Затмите их всех! <span class="page-slogan__proposal">Выкладывайте&nbsp;все,&nbsp;что накопилось в телефоне!</span>
@@ -243,7 +272,7 @@
                   <use xlink:href="#icon-editor-crop"></use>
                 </svg>
                 <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                    <div class="photo-edit__range-toggle photo-edit__range-toggle--crop" aria-label="Значение фильтра"></div>
+                    <button class="photo-edit__range-toggle photo-edit__range-toggle--crop" aria-label="Значение фильтра"></button>
                 </div>
               </li>
               <li class="photo-edit__tool">
@@ -251,7 +280,7 @@
                   <use xlink:href="#icon-editor-fill"></use>
                 </svg>
                 <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                  <div class="photo-edit__range-toggle photo-edit__range-toggle--fill" aria-label="Значение фильтра"></div>
+                  <button class="photo-edit__range-toggle photo-edit__range-toggle--fill" aria-label="Значение фильтра"></button>
                 </div>
               </li>
               <li class="photo-edit__tool photo-edit__tool--contrast">
@@ -259,12 +288,12 @@
                   <use xlink:href="#icon-editor-contrast"></use>
                 </svg>
                 <div class="photo-edit__range photo-edit__range--full-width" aria-label="Интенсивность фильтра">
-                    <div class="photo-edit__range-toggle photo-edit__range-toggle--contrast" aria-label="Значение фильтра"></div>
+                    <button class="photo-edit__range-toggle photo-edit__range-toggle--contrast" aria-label="Значение фильтра"></button>
                 </div>
               </li>
             </ul>
             <div class="photo-edit__range photo-edit__range--general photo-edit__range--small-width">
-                <div class="photo-edit__range-toggle" aria-label="Значение фильтра"></div>
+                <button class="photo-edit__range-toggle" aria-label="Значение фильтра"></button>
             </div>
             <div class="photo-edit__load-items">
               <button class="button photo-edit__button" type="submit">Запостить</button>
@@ -313,7 +342,7 @@
       <div class="footer__developers">
         <address class="footer__developers-text">
           <span class="footer__developers-title">Разработано</span>
-          <a class="footer__developers-link" href="#">
+          <a class="footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">
             <svg class="footer__developers-svg" width="27" height="34" fill="#d22856">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>

@@ -32,7 +32,7 @@
 
 .contacts__type {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -210,7 +210,6 @@
   }
 
   .contacts__map-wrapper {
-    max-width: 1200px;
     height: 496px;
     margin-right: auto;
     margin-left: auto;
@@ -226,6 +225,7 @@
   // }
 
   .contacts__map {
+    max-width: 1200px;
     top: 123%;
   }
 }

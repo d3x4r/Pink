@@ -13,48 +13,45 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-var form = document.querySelector("form");
-var second_name = document.querySelector(".form__user-input--second-name");
-var first_name = document.querySelector(".form__user-input--first-name");
+var formContest = document.querySelector("form");
+var secondName = document.querySelector(".form__user-input--second-name");
+var firstName = document.querySelector(".form__user-input--first-name");
 var mail = document.querySelector(".form__contact-input--mail");
-var modal_error = document.querySelector(".modal--failure");
-var modal_ok = document.querySelector(".modal--succes");
+var modalError = document.querySelector(".modal--failure");
+var modalSucces = document.querySelector(".modal--succes");
+var modalCloseError = document.querySelector(".modal__button--failure");
+var modalCloseSucces = document.querySelector(".modal__button--succes");
 
-var modal_close_failure = document.querySelector(".modal__button--failure");
+if (formContest) {
 
-var modal_close_ok = document.querySelector(".modal__button--succes");
-
-
-modal_close_failure.addEventListener("click", function (evt) {
+modalCloseError.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal_error.classList.add("modal--close");
+  modalError.classList.add("modal--close");
 });
 
-modal_close_ok.addEventListener("click", function (evt) {
+modalCloseSucces.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modal_ok.classList.add("modal--close");
+  modalSucces.classList.add("modal--close");
 });
 
-form.addEventListener("submit", function (evt) {
-  if (!second_name.value || !first_name.value || !mail.value) {
+formContest.addEventListener("submit", function (evt) {
+  if (!secondName.value || !firstName.value || !mail.value) {
     evt.preventDefault();
-    modal_error.classList.add("modal--show");
-    modal_error.classList.remove("modal--close");
-    console.log("Нужно ввести логин и пароль");
+    modalError.classList.add("modal--show");
+    modalError.classList.remove("modal--close");
   }
   else {
     evt.preventDefault();
-    modal_ok.classList.add("modal--show");
-    modal_ok.classList.remove("modal--close");
-    console.log("123");
+    modalSucces.classList.add("modal--show");
+    modalSucces.classList.remove("modal--close");
   }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modal_error.classList.contains("modal--show")) {
-      modal_error.classList.remove("modal--show");
+    if (modalError.classList.contains("modal--show")) {
+      modalError.classList.remove("modal--show");
     }
   }
 });
@@ -62,8 +59,9 @@ window.addEventListener("keydown", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modal_ok.classList.contains("modal--show")) {
-      modal_ok.classList.remove("modal--show");
+    if (modalSucces.classList.contains("modal--show")) {
+      modalSucces.classList.remove("modal--show");
     }
   }
 });
+}

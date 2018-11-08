@@ -11,6 +11,7 @@
     <script src="js/pixel-glass/script.js"></script> -->
     <!------------- pixel-glass-end ------------>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin>
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -45,7 +46,7 @@
               <a class="site-navigation__link site-navigation__link--active">Конкурс</a>
             </li>
             <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">HTML Academy</a>
+              <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -100,7 +101,7 @@
                 </li>
                 <li class="form__progress-item form__progress-item--tower">
                   <input class="form_progress-input visually-hidden" type="checkbox" id="tower" checked>
-                  <label class="form__progress-checkbox form__label-title" for="tower">Удержал башню</label>
+                  <label class="form__progress-checkbox form__label-title" for="tower"  tabindex="0">Удержал башню</label>
                 </li>
                 <li class="form__progress-item form__progress-item--hotel">
                   <input class="form_progress-input visually-hidden" type="checkbox" id="hotel">
@@ -192,7 +193,7 @@
       <div class="footer__developers">
         <address class="footer__developers-text">
           <span class="footer__developers-title">Разработано</span>
-          <a class="footer__developers-link" href="#">
+          <a class="footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив HTML Academy">
             <svg class="footer__developers-svg" width="27" height="34" fill="#d22856">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>

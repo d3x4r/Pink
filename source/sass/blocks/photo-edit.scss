@@ -59,14 +59,15 @@
 
 .photo-edit__range-toggle {
   position: absolute;
-  top: -7px;
+  top: -5px;
   right: 35px;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border: 2px solid #d22856;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  padding: 0;
 }
 
 .photo-edit__range-toggle:active {

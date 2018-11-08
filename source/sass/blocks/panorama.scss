@@ -1,3 +1,7 @@
+.panorama {
+  margin-bottom: 1px;
+}
+
 .panorama__image-container {
   position: relative;
 }
@@ -6,7 +10,7 @@
   position: absolute;
   box-sizing: border-box;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   top: 1px;
   right: 20px;
   margin-top: 0;
