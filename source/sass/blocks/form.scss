@@ -378,6 +378,26 @@
   display: none;
 }
 
+.form_progress-input:focus + .form__progress-checkbox::after {
+  position: absolute;
+  content: "→";
+  bottom: 13px;
+  left: 42px;
+  color: #d22856;
+  font-size: 25px;
+  line-height: 10px;
+}
+
+.form__os-input:focus + .form__os-label::after {
+  position: absolute;
+  content: "→";
+  bottom: 11px;
+  left: -28px;
+  color: #d22856;
+  font-size: 25px;
+  line-height: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .form__fieldset-name {
     order: 1;
@@ -576,6 +596,17 @@
     margin: 0;
     margin-top: 24px;
     margin-left: auto;
+  }
+
+  .form_progress-input:focus + .form__progress-checkbox::after {
+    left: 18px;
+    font-size: 30px;
+  }
+
+  .form__os-input:focus + .form__os-label::after {
+    content: "→";
+    left: -97px;
+    font-size: 30px;
   }
 }
 
@@ -777,5 +808,10 @@
 
   .form__foot-note__add {
     display: inline;
+  }
+
+  .form_progress-input:focus + .form__progress-checkbox::after {
+    left: -93px;
+    font-size: 30px;
   }
 }
