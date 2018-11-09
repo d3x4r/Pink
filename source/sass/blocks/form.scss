@@ -81,8 +81,11 @@
 }
 
 .form__progress-list {
-  margin: 0;
   margin-top: 43px;
+}
+
+.form__progress-column {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -119,7 +122,7 @@
   margin-bottom: 52px;
 }
 
-.form__progress-item:last-child {
+.form__progress-item--last-item {
   margin-bottom: 47px;
 }
 
